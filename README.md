@@ -17,24 +17,24 @@ Before running the script, ensure that you have the following:
 Copy code
 2. If running on Google Colab, mount your Google Drive:
 
-```python
+python
 from google.colab import drive
 drive.mount('/content/drive')
 
-Usage :
+##Usage 
 
 Prepare a text file containing the prompts for image generation, with one prompt per line.
 Upload the text file to the script when prompted.
 The script will generate num_images (default is 5) for each prompt and save them in the /content/drive/MyDrive/Automation/CET_Images/ folder on your Google Drive.
 The generated images will have relevant keywords added as IPTC metadata, which can be useful for image search and organization.
 
-Customization:
+##Customization
 
 You can customize the following parameters in the script:
 num_images: The number of images to generate for each prompt (default is 5).
 image_folder: The path to the folder where the generated images will be saved (default is /content/drive/MyDrive/Automation/CET_Images/).
 
-Note:
+##Note
 
 The script assumes that you have a CUDA-enabled GPU available. If you're running on a CPU, the image generation process will be significantly slower.
 The script requires a stable internet connection to generate images and fetch keywords from the Gemini model.

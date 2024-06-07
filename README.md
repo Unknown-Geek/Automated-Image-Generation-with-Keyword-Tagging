@@ -17,7 +17,7 @@ Before running the script, ensure that you have the following:
 Copy code
 2. If running on Google Colab, mount your Google Drive:
 
-'''python
+''' python
 from google.colab import drive
 drive.mount('/content/drive')
 '''

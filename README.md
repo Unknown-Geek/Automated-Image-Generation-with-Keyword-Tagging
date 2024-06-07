@@ -20,7 +20,7 @@ Copy code
 '''python
 from google.colab import drive
 drive.mount('/content/drive')
-
+'''
 ## Usage 
 
 Prepare a text file containing the prompts for image generation, with one prompt per line.

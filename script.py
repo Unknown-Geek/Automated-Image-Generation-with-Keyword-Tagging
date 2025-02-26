@@ -44,7 +44,7 @@ model = genai.GenerativeModel('gemini-pro')
 
 # Mount Google Drive
 drive.mount('/content/drive')
-!rm -rf /content/drive/MyDrive/Automation/CET_Images/
+!rm -rf /content/drive/MyDrive/Automation/Images/
 
 # Upload text file containing prompts
 uploaded = files.upload()
@@ -67,7 +67,7 @@ def get_gemini_response(question):
 
 
 # Path to the 'Images' folder in your Google Drive
-image_folder = "/content/drive/MyDrive/Automation/CET_Images/"
+image_folder = "/content/drive/MyDrive/Automation/Images/"
 
 # Create the 'Images' folder if it doesn't exist
 if not os.path.exists(image_folder):

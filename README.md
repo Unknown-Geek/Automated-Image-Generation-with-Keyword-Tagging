@@ -25,14 +25,14 @@ drive.mount('/content/drive')
 
 Prepare a text file containing the prompts for image generation, with one prompt per line.
 Upload the text file to the script when prompted.
-The script will generate num_images (default is 5) for each prompt and save them in the /content/drive/MyDrive/Automation/Images/ folder on your Google Drive.
+The script will generate num_images (default is 5) for each prompt and save them in the given public folder on your Google Drive.
 The generated images will have relevant keywords added as IPTC metadata, which can be useful for image search and organization.
 
 ## Customization
 
 You can customize the following parameters in the script:
 num_images: The number of images to generate for each prompt (default is 5).
-image_folder: The path to the folder where the generated images will be saved (default is /content/drive/MyDrive/Automation/Images/).
+PUBLIC_FOLDER_ID: The path to the folder where the generated images will be saved ( Note: the folder should be made public)
 
 ## Note
 
